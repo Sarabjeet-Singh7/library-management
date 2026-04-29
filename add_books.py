@@ -1,0 +1,9 @@
+from utils import books
+
+def add():
+    book_name = input("Enter the Book name to add: ").upper()
+    if book_name in books:
+        books[book_name]+=1
+    else:
+        books[book_name]=1    
+    print(f"Book {book_name} added into library")
